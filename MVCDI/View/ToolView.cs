@@ -32,8 +32,9 @@ namespace MVCDI.View
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //
-            label2.Text = (_toolImportService.plue(int.Parse(textBox1.Text), int.Parse(textBox2.Text))).ToString();
+            //(_toolImportService.plue(int.Parse(textBox1.Text), int.Parse(textBox2.Text))).ToString();
+
+            dataGrid1.DataSource = _toolImportService.CreateData();
         }
     }
 }
